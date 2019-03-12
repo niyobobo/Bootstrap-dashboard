@@ -67,7 +67,7 @@ body {
 .main-color-bg{
   background: #e74c3c !important;
   border-color: #e74c3c !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 /* Dropdown */
@@ -94,6 +94,12 @@ body {
   background: #333333;
   color: #ffffff;
 }
+.dash-box{
+  text-align: center;
+}
+
+
+
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
