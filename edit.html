@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin | Pages</title>
+  <title>Admin | Edit page</title>
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="pages.html">Pages</a></li>
+          <li><a href="pages.html">Pages</a></li>
           <li><a href="posts.html">Posts</a></li>
           <li><a href="users.html">Users</a></li>
         </ul>
@@ -46,7 +46,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10">
-          <h1> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Pages <small>Manage your site pages</small>
+          <h1> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Edit Page<small> About</small>
           </h1>
         </div>
         <div class="col-md-2">
@@ -71,7 +71,8 @@
     <div class="container">
       <ol class="breadcrumb">
         <li><a href="index.html">Dashboard</a></li>
-        <li class="active">Pages</li>
+        <li><a href="pages.html">Pages</a></li>
+        <li class="active">Edit</li>
       </ol>
     </div>
   </section>
@@ -110,44 +111,29 @@
           <div class="panel panel-default">
             <div class="panel-heading main-color-bg">Pages</div>
             <div class="panel-body">
-              <div class="row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Filter page...">
-                </div>
+              <div class="form-group">
+                <label>Page Title</label>
+                <input type="text" class="form-control" placeholder="Page Title" value="About">
               </div>
-              <br>
-              <table class="table table-striped table-hover">
-                  <tr>
-                    <th>Title</th>
-                    <th>Published</th>
-                    <th>Created</th>
-                    <th>Action</th>
-                  </tr>
-                  <tr>
-                    <td>Home</td>
-                    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                    <td>Dec 12, 2016</td>
-                    <td><a class="btn btn-primary" href="edit.html"> Edit</a> <a class="btn btn-danger" href="#"> Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>About</td>
-                    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                    <td>Dec 13, 2016</td>
-                    <td><a class="btn btn-primary" href="edit.html"> Edit</a> <a class="btn btn-danger" href="#"> Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>Service</td>
-                    <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
-                    <td>Dec 14, 2016</td>
-                    <td><a class="btn btn-primary" href="edit.html"> Edit</a> <a class="btn btn-danger" href="#"> Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>Contact</td>
-                    <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
-                    <td>Dec 15, 2016</td>
-                    <td><a class="btn btn-primary" href="edit.html"> Edit</a> <a class="btn btn-danger" href="#"> Delete</a></td>
-                    </tr>
-              </table>
+              <div class="form-group">
+                <label>Page body</label>
+                <textarea name="editor1" type="text" class="form-control" placeholder="Page body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum a pariatur accusamus neque excepturi modi quo autem, dolorem rerum nesciunt totam placeat, iste necessitatibus non distinctio asperiores ipsa quia.
+                </textarea>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" checked> Published</label>
+              </div>
+              <div class="form-group">
+                <label>Meta Tags</label>
+                <input type="text" class="form-control" placeholder="Add some tags..." value="Tag1, Tag2"></input>
+              </div>
+              <div class="form-group">
+                <label>Meta Descriptions</label>
+                <input type="text" class="form-control" placeholder="Add Meta Descriptions...." value="Lorem ipsum dolor sit amet consectetur adipisicing elit."></input>
+              </div>
+              <input type="submit" class="btn btn-primary" value="submit">
+            </div>
             </div>
           </div>
         </div>
